@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+    <div id="display_container">
+        <div id="first_display"> {{ requete.split('-')[0] }} </div>
+        <div id="to_be_hidden"> {{ requete.split('-')[1] }} </div>
+    </div>
+    <ul>
+        <li id="show_result">Montrer</li>
+        <li><a href="/">Suivant</a></li>
+    </ul>
+
+
+{% endblock %}
+
+

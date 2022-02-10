@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div>Learn Italian</div>
+    </header>
+    <div id="main">
+        {% block content %}
+
+    
+
+        {% endblock %}
+    </div>
+
+
+    <footer>
+        <div>
+            <p>Copyright Etienne</p>
+            <p>2022 - Février</p>
+        </div>
+        <div>
+            <p>Thank you very much - Herzlich WIlkommen</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+<script>
+    var to_be_hidden = document.getElementById("to_be_hidden")
+    to_be_hidden.style.visibility = 'hidden'
+    show_result = document.getElementById('show_result')
+
+    show_result.onclick = function () {
+
+        to_be_hidden.style.visibility = 'visible'
+
+    }
+
+</script>
